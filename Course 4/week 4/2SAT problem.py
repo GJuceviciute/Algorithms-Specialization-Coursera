@@ -21,8 +21,6 @@ def remove_always_satisfiable():  # removes all clauses that include 'x'/'-x', i
     c = 0
     for i in range(0, len(h)-1, 2):
         if -h[i] not in d or -h[i+1] not in d:
-            h[i] = 0
-            h[i+1] = 0
             c = 1
         else:
             h1 += [h[i], h[i+1]]
