@@ -7,7 +7,7 @@ g = []
 with open('clustering1.txt', 'r') as doc:
     for line in doc:
         g.append(list(map(int, line.split())))
-size = g[0]
+size = g[0][0]
 del g[0]
 g.sort(key=lambda x: x[-1])
 
