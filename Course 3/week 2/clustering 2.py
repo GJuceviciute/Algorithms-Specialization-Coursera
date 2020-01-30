@@ -42,7 +42,6 @@ for i in range(size):
                     clusters[j] = clusters[i]
                     cluster_elements[clusters[i]] += [j]
                 elif clusters[i] != clusters[j]:
-                    # print(i, var, j)
                     past_cluster = clusters[j]
                     cluster_elements[clusters[i]] += cluster_elements[past_cluster]
                     for e in cluster_elements[past_cluster]:
